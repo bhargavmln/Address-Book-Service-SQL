@@ -24,4 +24,8 @@ CREATE TABLE address_book(
  ('Hinata','Hyuga','Konoha','Leaf  Village','Shippuden',565656,7777777777,'Hinata@gmail.com');
  SELECT * FROM address_book;
  
+ #UC4
+ UPDATE address_book
+ SET phone = '1234567890'
+ WHERE firstname = 'Hinata';
  
