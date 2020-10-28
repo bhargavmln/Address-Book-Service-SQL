@@ -28,4 +28,9 @@ CREATE TABLE address_book(
  UPDATE address_book
  SET phone = '1234567890'
  WHERE firstname = 'Hinata';
-  SELECT * FROM address_book;
+ SELECT * FROM address_book;
+
+#UC5
+DELETE FROM address_book
+WHERE firstname = 'Hinata';
+SELECT * FROM address_book;
