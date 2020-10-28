@@ -21,7 +21,10 @@ CREATE TABLE address_book(
  INSERT INTO address_book(firstname,lastname,address,city,state,zip,phone,email) VALUES
  ('Naruto','Uzumaki','Konoha','Leaf  Village','Shippuden',936363,999999999,'naruto@gmail.com'),
  ('Sasuke','Uchiha','Konoha','Leaf  Village','Shippuden',936369,888888888,'uchiha@gmail.com'),
- ('Hinata','Hyuga','Konoha','Leaf  Village','Shippuden',565656,7777777777,'Hinata@gmail.com');
+ ('Hinata','Hyuga','Konoha','Leaf  Village','Shippuden',565656,7777777777,'Hinata@gmail.com'),
+ ('Abhishek','Kumar','Mumbai','Sand Village','Shippuden',123123,0000000000,'abi@gmail.com'),
+ ('Koushik','Mankala','Pune','Leaf  Village','Shippuden',936369,5555555555,'kou@gmail.com'),
+ ('Bhargav','MLN','Pune','Sand  Village','Shippuden',565656,7777777777,'baa@gmail.com');
  SELECT * FROM address_book;
  
  #UC4
@@ -38,3 +41,7 @@ SELECT * FROM address_book;
 #UC6
 SELECT * FROM address_book 
 WHERE city = 'Leaf  Village';
+
+#UC7
+SELECT city,count(firstname) FROM address_book GROUP BY city;
+SELECT state,count(firstname) FROM address_book GROUP BY state;
