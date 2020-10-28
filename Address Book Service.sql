@@ -34,3 +34,7 @@ CREATE TABLE address_book(
 DELETE FROM address_book
 WHERE firstname = 'Hinata';
 SELECT * FROM address_book;
+
+#UC6
+SELECT * FROM address_book 
+WHERE city = 'Leaf  Village';
