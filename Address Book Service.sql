@@ -62,4 +62,9 @@ UPDATE address_book SET bookname = 'Book A', contacttype = 'family' WHERE firstn
 UPDATE address_book SET bookname = 'Book B', contacttype = 'friend' WHERE firstname = 'Abhishek';
 UPDATE address_book SET bookname = 'Book C', contacttype = 'cartoon' WHERE firstname = 'Naruto';
 UPDATE address_book SET bookname = 'Book C', contacttype = 'cartoon' WHERE firstname = 'Sasuke';
+
+#UC10
+SELECT contacttype,count(firstname) 
+FROM address_book 
+GROUP BY contacttype;
  
