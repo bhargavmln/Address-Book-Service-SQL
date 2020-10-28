@@ -45,3 +45,9 @@ WHERE city = 'Leaf  Village';
 #UC7
 SELECT city,count(firstname) FROM address_book GROUP BY city;
 SELECT state,count(firstname) FROM address_book GROUP BY state;
+
+#UC8
+SELECT *  
+FROM address_book 
+WHERE city = 'Leaf  Village'
+ORDER BY firstname; 
