@@ -68,3 +68,8 @@ SELECT contacttype,count(firstname)
 FROM address_book 
 GROUP BY contacttype;
  
+ #UC11
+  INSERT INTO address_book(firstname,lastname,address,city,state,zip,phone,email,bookname,contacttype) VALUES
+ ('Rama','Rao','Everywhere','Leaf  Village','Goa',936363,333399999,'nkkm@gmail.com','Book A','family'),
+ ('Krishna','Reddy','Nowhere','Sand  Village','Telangana','936369','444488888','njbm@gmail.com','Book B', 'friend');
+ SELECT * FROM address_book;
