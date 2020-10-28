@@ -32,7 +32,7 @@ CREATE TABLE address_book(
  SET phone = '1234567890'
  WHERE firstname = 'Hinata';
  SELECT * FROM address_book;
-
+ 
 #UC5
 DELETE FROM address_book
 WHERE firstname = 'Hinata';
@@ -51,3 +51,15 @@ SELECT *
 FROM address_book 
 WHERE city = 'Leaf  Village'
 ORDER BY firstname; 
+
+#UC9
+ALTER TABLE address_book ADD bookname varchar(250);
+ALTER TABLE address_book ADD contacttype varchar(250);
+DESCRIBE address_book;
+
+UPDATE address_book SET bookname = 'Book A', contacttype = 'family' WHERE firstname = 'Koushik';
+UPDATE address_book SET bookname = 'Book A', contacttype = 'family' WHERE firstname = 'Bhargav';
+UPDATE address_book SET bookname = 'Book B', contacttype = 'friend' WHERE firstname = 'Abhishek';
+UPDATE address_book SET bookname = 'Book C', contacttype = 'cartoon' WHERE firstname = 'Naruto';
+UPDATE address_book SET bookname = 'Book C', contacttype = 'cartoon' WHERE firstname = 'Sasuke';
+ 
